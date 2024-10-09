@@ -103,6 +103,17 @@ def Linux : StandardSpec<"Linux"> {
             ArgSpec<UnsignedIntType>,
           ]
         >,
+        FunctionSpec<
+          "mremap",
+          RetValSpec<VoidPtr>,
+          [
+            ArgSpec<VoidPtr>,
+            ArgSpec<SizeTType>,
+            ArgSpec<SizeTType>,
+            ArgSpec<IntType>,
+            ArgSpec<VoidPtr>,
+          ]
+        >,
       ]  // Functions
   >;
 
